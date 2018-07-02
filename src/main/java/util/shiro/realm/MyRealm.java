@@ -26,7 +26,7 @@ public class MyRealm extends AuthorizingRealm {
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 		  	Set<String> roleNames = new HashSet<String>();  
 	        Set<String> permissions = new HashSet<String>();  
-	        roleNames.add("administrator");//添加角色
+	        roleNames.add("admin");//添加角色
 	        permissions.add("newPage");  //添加权限
 	        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo(roleNames);  
 	        info.setStringPermissions(permissions);  

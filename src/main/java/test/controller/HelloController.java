@@ -97,7 +97,7 @@ public class HelloController {
     public ModelAndView newPageNotAdd() throws Exception {
         ModelAndView mav = new ModelAndView("newPageNotAdd");
         Subject subject = SecurityUtils.getSubject();
-        if(subject.hasRole("newPage")){
+        if(subject.hasRole("admin")){
            //有权限
         	System.out.println("有");
         }else{
